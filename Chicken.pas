@@ -1,5 +1,4 @@
 unit Chiken;
-//unit Unit4;
 
 interface
 
@@ -42,64 +41,9 @@ begin
   glRotatef (ry, 0.0,1.0, 0.0);
   glTranslatef (tx, 0.0, 0.0);
 
- { case mode of
-    POINT : glPolygonMode (GL_FRONT_AND_BACK, GL_POINT);
-    LINE : glPolygonMode (GL_FRONT_AND_BACK, GL_LINE);
-    FILL : glPolygonMode (GL_FRONT_AND_BACK, GL_FILL);
-  end;
-
-  case glutobj of
-    TEAPOT: glutSolidTeapot (1.5);
-    CUBE : glutSolidCube (1.5);
-    SPHERE : glutSolidSphere (1.5, 20, 20);
-    CONE : glutSolidCone (0.5, 1.5, 20, 20);
-    TORUS : glutSolidTorus (0.5, 1.5, 20, 20);
-    DODECAHEDRON : glutSolidDodecahedron;
-    ICOSAHEDRON : glutSolidIcosahedron;
-    TETRAHEDRON: glutSolidTetrahedron;
-  end;
-  //glPopMatrix;
-   }
-
-  //iceman
-           {glutSolidSphere(1,30,30);
-           glPushMatrix;
-           glTranslatef(0,0,-1.5);
-           glutSolidSphere(1.3,30,30);
-           glPopMatrix;
-           glTranslatef(0,0,1.2);
-           glutSolidSphere(0.8,30,30);
-           glPopMatrix;
-
-           glPushMatrix;
-           glColor3f(0,1,0);
-           glTranslatef(0,0,1.8);
-           glRotatef(90,0,0,1);
-           glutSolidCone(0.6,1,30,30);
-           glPopMatrix;
-
-           glPushMatrix;        // левый глаз
-           glColor3f(0,0,0);
-           glTranslatef(-0.3,-1.7,1);
-           glutSolidSphere (0.03, 20, 20);
-           glPopMatrix;
-
-           glPushMatrix;       // правый глаз
-           glColor3f(0,0,0);
-           glTranslatef(0,-1.7,1);
-           glutSolidSphere (0.03, 20, 20);
-           glPopMatrix;
-
-           glPushMatrix;            // нос
-           glColor3f(1,0.5,0);
-           glTranslatef(-0.2,-2.1,0.7);
-           glRotatef(-180,0.5,1,-0.8);
-           glutSolidCone (0.05, 1.0, 20, 20);
-           glPopMatrix;   }
-
            glpopMatrix;
 
-           // ÷ыпл€тки  ___________________________
+           // ÷ыпл€тки
 
             glColor3f(1,1,0);
             glPushMatrix;
@@ -114,7 +58,6 @@ begin
            glTranslatef(0,0,1);             //голова
            glutSolidSphere(0.6,30,30);
            glPopMatrix;
-  {___________________________________________________}
 
            glLineWidth(5);
            glBegin(GL_LINES);
